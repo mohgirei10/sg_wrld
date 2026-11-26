@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+body { @apply bg-paper font-sans text-ink antialiased; }
+:focus-visible { outline: 3px solid #ff6b1a; outline-offset: 3px; }
+
+.blueprint {
+  background-color: #4b1827;
+  background-image:
+    linear-gradient(rgba(215, 221, 210, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 221, 210, 0.14) 1px, transparent 1px),
+    linear-gradient(rgba(215, 221, 210, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 221, 210, 0.06) 1px, transparent 1px);
+  background-size: 96px 96px, 96px 96px, 16px 16px, 16px 16px;
+}
